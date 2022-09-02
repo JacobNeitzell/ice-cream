@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"
+    defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Ice Cream Palor</title>
+</head>
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="debug">
+  <header class="row">
+  </header>
+  <main class="container-flluid">
+
+    <section class="row">
+      <h1>Ice Cream</h1>
+      <div class="col-md-4 d-flex">
+        <div>
+          <img onclick="addiceCreamsToCart('Cookie Dough')"
+            src="https://celebratingsweets.com/wp-content/uploads/2014/04/Cookie-Dough-Ice-Cream-1-5.jpg"
+            alt="Cookie Dough" class="image-fluid">
+          <div class="text-center">
+            <p>Cookie Dough</p>
+            <p>$1</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex justify-content-around">
+        <div>
+          <img onclick="addiceCreamsToCart('Vanilla')"
+            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ultimate-vanilla-ice-cream-1628511695.jpg"
+            alt="Vanilla" class="image-fluid">
+          <div class="text-center">
+            <p>Vanilla</p>
+            <p>$1</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex justify-content-around">
+        <div>
+          <img onclick="addiceCreamsToCart('Strawberry')"
+            src="https://www.realfoodwithjessica.com/wp-content/uploads/2017/07/paleostrawberryicecream2.jpg"
+            alt="Strawberry" class="image-fluid">
+          <div class="text-center">
+            <p>Strawberry</p>
+            <p>$2</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="row">
+      <h1>SPRANKLES</h1>
+      <div class="col-md-4 d-flex">
+        <div>
+          <img onclick="addToppingsToCart('Sprinkles')"
+            src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Sprinkles2.jpg" alt="sprinkles"
+            class="image-fluid">
+          <div class="text-center">
+            <p>Sprinkles</p>
+            <p>$2</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex justify-content-around">
+        <div>
+          <img onclick="addToppingsToCart('Choclate Chips')"
+            src="https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/chocolate-chips.jpg?quality=82&strip=1&resize=640%2C360"
+            alt="sprinkles" class="image-fluid">
+          <div class="text-center">
+            <p>Choclate Chips</p>
+            <p>$1</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row">
+      <h1>Vessels</h1>
+      <div class="col-md-4 d-flex">
+        <div>
+          <img onclick="addVesselsToCart('Waffle Cone')"
+            src="https://m.media-amazon.com/images/I/71VNjBMakfL._SL1500_.jpg" alt="sprinkles" class="image-fluid">
+          <div class="text-center">
+            <p>Waffle Cone</p>
+            <p>$2</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex justify-content-around">
+        <div>
+          <img onclick="addVesselsToCart('Waffle Bowl')" src="http://images.wbmason.com/350/L_JOY66050.jpg" alt="bowl"
+            class="image-fluid">
+          <div class="text-center">
+            <p>Waffle Bowl</p>
+            <p>$4</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="row">
+      <div class="menu-border checkout p-2">
+        <div class="col-12" id="cart">
+          <!-- ANCHOR toppings -->
+          <!-- <p>Name:</p>
+          <p>Price$</p>
+          <img src=""><i class="mdi mdi-delete text-danger" onclick="removeitem(name)"></i></img>
+
+        <p>Name:</p>
+          <p>Price$</p>
+          <img src=""><i class="mdi mdi-delete text-danger" onclick="removeitem(name)"></i></img> -->
+
+
+
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+  <footer>
+
+
+
+
+
+  </footer>
+</body>
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css"
+  integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="app.js"></script>
+
+</html>
